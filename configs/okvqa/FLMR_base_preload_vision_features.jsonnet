@@ -5,14 +5,14 @@ local okvqa_data = data.okvqa_data_pipeline;
 local tokenizer_config = {
   "tokenizer": {
     "TokenizerClass": "QueryTokenizer",
-    "TokenizerModelVersion": "/rds/project/rds-hirYTW1FQIw/shared_space/vqa_data/KBVQA_data/checkpoints/colbertv2.0",
+    "TokenizerModelVersion": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/checkpoints/colbertv2.0",
     "SPECIAL_TOKENS":{
       "additional_special_tokens": ["<BOV>", "<SOV>", "<EOV>", "<BOQ>", "<EOQ>", "<BOC>", "<EOC>", "<BOK>", "<EOK>"],
     },
   },
   "decoder_tokenizer": {
     "TokenizerClass": "DocTokenizer",
-    "TokenizerModelVersion": "/rds/project/rds-hirYTW1FQIw/shared_space/vqa_data/KBVQA_data/checkpoints/colbertv2.0",
+    "TokenizerModelVersion": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/checkpoints/colbertv2.0",
     "SPECIAL_TOKENS":{
       "additional_special_tokens": ["<BOV>", "<SOV>", "<EOV>", "<BOQ>", "<EOQ>", "<BOC>", "<EOC>", "<BOK>", "<EOK>"],
     },
@@ -27,7 +27,7 @@ local image_processor_config = {
   },
 };
 
-local EncoderModelVersion = "/rds/project/rds-hirYTW1FQIw/shared_space/vqa_data/KBVQA_data/checkpoints/colbertv2.0";
+local EncoderModelVersion = "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/checkpoints/colbertv2.0";
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 local data_loader = {
