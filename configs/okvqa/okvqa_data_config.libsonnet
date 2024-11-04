@@ -1,39 +1,39 @@
 local vqa_data_path = {
   question_files: {
-    train: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/OpenEnded_mscoco_train2014_questions.json',
-    test: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/OpenEnded_mscoco_val2014_questions.json',
+    train: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/OpenEnded_mscoco_train2014_questions.json',
+    test: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/OpenEnded_mscoco_val2014_questions.json',
   },
   annotation_files: {
-    train: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/mscoco_train2014_annotations.json',
-    test: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/mscoco_val2014_annotations.json',
+    train: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/mscoco_train2014_annotations.json',
+    test: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/mscoco_val2014_annotations.json',
   },
 };
 local image_data_path = {
-  train: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/train2014',
-  test: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/val2014',
+  train: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/train2014',
+  test: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/val2014',
 };
 local caption_features = {
-  train: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/captions/train_predictions.json',
-  valid: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/captions/valid_predictions.json',
-  test: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/captions/test_predictions.json',
+  train: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/captions/train_predictions.json',
+  valid: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/captions/valid_predictions.json',
+  test: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/captions/test_predictions.json',
 };
 local VinVL_features = {
-  train: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/vinvl_output/vinvl_okvqa_trainset_full/inference/vinvl_vg_x152c4/predictions.tsv',
-  test: '/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/vinvl_output/vinvl_okvqa_testset_full/inference/vinvl_vg_x152c4/predictions.tsv',
+  train: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/vinvl_output/vinvl_okvqa_trainset_full/inference/vinvl_vg_x152c4/predictions.tsv',
+  test: '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/vinvl_output/vinvl_okvqa_testset_full/inference/vinvl_vg_x152c4/predictions.tsv',
 };
 local ocr_features = {
-  "train": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/OCR/train",
-  "test": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/OCR/valid",
+  "train": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/OCR/train",
+  "test": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/OCR/valid",
   "combine_with_vinvl": true,
 };
 local passage_data = {
-  "train": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/passages/okvqa_train_corpus.csv",
-  "full": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/passages/okvqa_full_corpus.csv",
+  "train": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/passages/okvqa_train_corpus.csv",
+  "full": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/passages/okvqa_full_corpus.csv",
 };
 local dpr_training_annotations = {
-  "train": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/passages/retriever_train.json",
-  "valid": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/passages/retriever_testdev.json",
-  "test": "/home/wl356/cvnlp_rds/shared_space/vqa_data/KBVQA_data/ok-vqa/pre-extracted_features/passages/retriever_test.json",
+  "train": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/passages/retriever_train.json",
+  "valid": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/passages/retriever_testdev.json",
+  "test": "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/pre-extracted_features/passages/retriever_test.json",
 };
 
 local okvqa_data_pipeline = {
