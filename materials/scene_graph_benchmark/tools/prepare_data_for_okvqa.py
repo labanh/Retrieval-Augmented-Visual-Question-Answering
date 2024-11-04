@@ -17,16 +17,16 @@ from vqa_tools import VQA
 
 dummy = False
 
-qs_valid_file = '../../data/ok-vqa/OpenEnded_mscoco_val2014_questions.json'
-qs_train_file = '../../data/ok-vqa/OpenEnded_mscoco_train2014_questions.json'
-annotation_valid_file = '../../data/ok-vqa/mscoco_val2014_annotations.json'
-annotation_train_file = '../../data/ok-vqa/mscoco_train2014_annotations.json'
+qs_valid_file = '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/OpenEnded_mscoco_val2014_questions.json'
+qs_train_file = '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/OpenEnded_mscoco_train2014_questions.json'
+annotation_valid_file = '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/mscoco_val2014_annotations.json'
+annotation_train_file = '/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/mscoco_train2014_annotations.json'
 
 for mode in ['train', 'valid']:
     if mode == 'train':
-        data_path = "../../data/ok-vqa/train2014"
+        data_path = "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/train2014"
     else:
-        data_path = "../../data/ok-vqa/val2014"
+        data_path = "/nvme_disk1/cmsc/hrhan/Retrieval-Augmented-Visual-Question-Answering/data/RAVQA_v2_data/okvqa/val2014"
 
     # where the data should be stored
     tsv_file = "datasets/okvqa/{}.tsv".format(mode)
